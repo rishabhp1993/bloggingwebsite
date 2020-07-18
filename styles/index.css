@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.header {
+    padding: 15px;
+    background-color: transparent;
+    margin: 0;
+    overflow: auto;
+}
+
+.logo {
+    width: 70%;
+    float: left;
+}
+
+.logo span {
+    font-family: 'Montez', cursive;
+    font-size: 35px;
+    color: #1601ff;
+}
+
+.logo p {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    margin: 0;
+}
+
+.loginregbtns {
+    width: 30%;
+    float: left;
+}
+
+.loginregbtns button {
+    float: right;
+    margin-right: 20px;
+    width: 80px;
+    color: white;
+    background-color: #1601ff;
+    padding: 5px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.postbuttons {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.postbuttons button {
+    margin-right: 20px;
+    color: black;
+    background-color: #d0b53b;
+    width: 80px;
+    border: 0;
+    padding: 10px;
+}
+
+#modalbg {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+#modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 30%
+}
+
+.modalheader {
+    border-bottom: 2px solid black;
+    position: relative;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.modalheader i {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 5px;
+    ;
+}
