@@ -14,45 +14,78 @@
             <p>Explore, Imagine, Create</p>
         </div>
         <div class="loginregbtns">
-            <button type="button">Sign In</button>
-            <button type="button">Sign Up</button>
+            <button type="button" id="btnopensigninmodal">Sign In</button>
+            <button type="button" id="btnopensignupmodal">Sign Up</button>
         </div>
     </div>
     <div class="main">
         <div class="postbuttons">
-            <button type="button" id="myBtn">Sign In</button>
-            <button>Sign Up</button>
+            <button type="button">All Posts</button>
+            <button>Create Post</button>
         </div>
     </div>
-    <div id="modalbg">
-        <div id="modal">
+    <div id="modalsignup" class="modalbg">
+        <div class="modal">
+            <div class="modalheader">
+                <span>Get Started</span>
+                <i id="btnclose1" class="fa fa-close"></i>
+            </div>
+            <div class="modalbody">
+                <p>Name</p>
+                <input type="text"></input>
+                <p>Username</p>
+                <input type="text"></input>
+                <p>Password</p>
+                <input type="text"></input>
+                <p>Confirm Password</p>
+                <input type="text"></input>
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div id="modalsignin" class="modalbg">
+        <div class="modal">
             <div class="modalheader">
                 <span>Welcome Back!</span>
-                <i class="fa fa-close"></i>
+                <i id="btnclose2" class="fa fa-close"></i>
             </div>
-
-            <hr />
+            <div class="modalbody">
+                <p>Username</p>
+                <input type="text"></input>
+                <p>Password</p>
+                <button>Sign In</button>
+            </div>
         </div>
     </div>
-
     <script>
         // Get the modal
-        var modal = document.getElementById("modalbg");
+        var modal1 = document.getElementById("modalsignup");
+
+        var modal2 = document.getElementById("modalsignin");
 
         // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+        var btnsignup = document.getElementById("btnopensignupmodal");
+
+        var btnsignin = document.getElementById("btnopensigninmodal");
 
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        var span1 = document.getElementById("btnclose1");
+        var span2 = document.getElementById("btnclose2");
 
         // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            modal.style.display = "block";
+        btnsignup.onclick = function() {
+            modal1.style.display = "block";
+        }
+        btnsignin.onclick = function() {
+            modal2.style.display = "block";
         }
 
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
+        span1.onclick = function() {
+            modal1.style.display = "none";
+        }
+        span2.onclick = function() {
+            modal2.style.display = "none";
         }
 
         // When the user clicks anywhere outside of the modal, close it

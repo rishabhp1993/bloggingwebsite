@@ -67,12 +67,12 @@ body {
     margin-right: 20px;
     color: black;
     background-color: #d0b53b;
-    width: 80px;
+    width: 100px;
     border: 0;
     padding: 10px;
 }
 
-#modalbg {
+.modalbg {
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -93,7 +93,7 @@ body {
     /* Black w/ opacity */
 }
 
-#modal {
+.modal {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -103,16 +103,46 @@ body {
 }
 
 .modalheader {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid #ddd;
     position: relative;
     padding: 10px;
     font-size: 24px;
+    color: #838180;
 }
 
 .modalheader i {
     position: absolute;
     right: 0px;
     top: 0px;
-    padding: 5px;
-    ;
+    padding: 10px;
+}
+
+.modalbody {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.modalbody input {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 4px;
+    height: 30px;
+    border: 0;
+    color: #838180;
+}
+
+.modalbody p {
+    margin-bottom: 5px;
+    color: #838180;
+    font-weight: 400;
+}
+
+.modalbody button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb761;
+    border-radius: 4px;
+    margin-top: 20px;
+    border: 0;
+    color: white;
 }
