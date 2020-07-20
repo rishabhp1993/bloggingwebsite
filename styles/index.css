@@ -7,7 +7,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
@@ -123,12 +122,17 @@ body {
 }
 
 .modalbody input {
-    width: 100%;
+    width: 97%;
     background-color: #eee;
     border-radius: 4px;
-    height: 30px;
+    height: 35px;
+    padding: 0 5px;
     border: 0;
-    color: #838180;
+    color: gray;
+}
+
+.modalbody input::placeholder {
+    color: #ccc;
 }
 
 .modalbody p {
@@ -145,4 +149,8 @@ body {
     margin-top: 20px;
     border: 0;
     color: white;
+}
+
+.modalbody .modalfooter {
+    text-align: center;
 }

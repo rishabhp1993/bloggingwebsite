@@ -31,15 +31,17 @@
                 <i id="btnclose1" class="fa fa-close"></i>
             </div>
             <div class="modalbody">
-                <p>Name</p>
-                <input type="text"></input>
-                <p>Username</p>
-                <input type="text"></input>
-                <p>Password</p>
-                <input type="text"></input>
-                <p>Confirm Password</p>
-                <input type="text"></input>
-                <button>Sign Up</button>
+                <form>
+                    <p>Name</p>
+                    <input placeholder="Enter your Name" type="text" required></input>
+                    <p>Username</p>
+                    <input placeholder="Enter your Username" type="text" required></input>
+                    <p>Password</p>
+                    <input placeholder="Enter your Password" type="text" required></input>
+                    <p>Confirm Password</p>
+                    <input placeholder="Re-enter your Password" type="text" required></input>
+                    <button type="submit">Sign Up</button>
+                </form>
             </div>
         </div>
     </div>
@@ -50,10 +52,16 @@
                 <i id="btnclose2" class="fa fa-close"></i>
             </div>
             <div class="modalbody">
-                <p>Username</p>
-                <input type="text"></input>
-                <p>Password</p>
-                <button>Sign In</button>
+                <form>
+                    <p>Username</p>
+                    <input type="text" placeholder="Enter your Username" required></input>
+                    <p>Password</p>
+                    <input type="text" placeholder="Enter your Password" required></input>
+                    <button type="submit">Sign In</button>
+                </form>
+                <div class="modalfooter">
+                    <p>Not a member yet?<a href="#" id="lnksignup"> Sign Up</a></p>
+                </div>
             </div>
         </div>
     </div>
@@ -87,12 +95,9 @@
         span2.onclick = function() {
             modal2.style.display = "none";
         }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
+        lnksignup.onclick = function() {
+            document.getElementById('modalsignup').style.display = 'block';
+            document.getElementById('modalsignin').style.display = 'none'
         }
     </script>
 </body>
