@@ -1,0 +1,144 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #ffeedd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.header {
+    padding: 15px;
+    background-color: transparent;
+    margin: 0;
+    overflow: auto;
+}
+
+.logo {
+    width: 70%;
+    float: left;
+}
+
+.logo span {
+    font-family: 'Montez', cursive;
+    font-size: 35px;
+    color: #1601ff;
+}
+
+.logo p {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    margin: 0;
+}
+
+.loginregbtns {
+    width: 30%;
+    float: left;
+}
+
+.loginregbtns button {
+    float: right;
+    margin-right: 20px;
+    width: 80px;
+    color: white;
+    background-color: #1601ff;
+    padding: 5px;
+}
+
+.flex-container {
+    height: 700px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 600px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    height: 200px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card .leftsegment {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-weight: bold;
+}
+
+.card .rightsegment {
+    padding: 15px;
+    background-color: #e8e8e8;
+    flex: 3;
+    border-radius: 0 10px 10px 0;
+}
+
+.card .rightsegment i {
+    font-size: 24px;
+    color: black;
+}
+
+.cardtitle {
+    color: gray;
+    font-weight: bold;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 25%
+}
+
+.modalbody {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: auto;
+}
+
+.modalbody button {
+    width: 40px;
+    padding: 10px;
+    background-color: #5cb761;
+    margin-top: 20px;
+    border: 0;
+    color: white;
+}
+
+.modalbg {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
