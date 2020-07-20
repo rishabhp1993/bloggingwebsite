@@ -1,5 +1,6 @@
 var innertext;
 var innertextcontent;
+var count = 0;
 
 function makeeditable() {
     innertext = document.getElementById("titletext").innerText;
@@ -26,4 +27,27 @@ function save() {
     document.getElementById("txtareacontent").style.display = "none";
     document.getElementById("btnedit").style.display = "block";
     document.getElementById("btnsave").style.display = "none";
+}
+
+function like() {
+    console.log(count)
+    count = count + 1;
+    if (count <= 1) {
+        document.getElementById("btnlike").innerHTML = "Liked <i class='fa fa-thumbs-up'>";
+        document.getElementById("count").innerHTML = count + " person likes this!"
+    } else {
+        document.getElementById("count").innerHTML = count + " person likes this!"
+    }
+}
+
+function comment() {
+    var comment = document.getElementById("txtcomment").value;
+    var tag = document.createElement("p");
+    tag.setAttribute("class", "commentcard");
+
+    var text = document.createTextNode(comment);
+    tag.appendChild(text);
+    var element = document.getElementById("commentcard");
+    element.prepend(tag);
+    document.getElementById("txtcomment").value = "";
 }

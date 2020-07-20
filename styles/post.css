@@ -109,3 +109,22 @@ body {
     margin-bottom: 20px;
     height: 200px;
 }
+
+.txtcomment {
+    font-family: inherit;
+    display: block;
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #fed3da;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 100px;
+}
+
+.commentcard {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 80%;
+}

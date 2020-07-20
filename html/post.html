@@ -44,8 +44,21 @@
             </p>
             <textarea class="txtareacontent" id="txtareacontent"></textarea>
         </div>
+        <div class="like">
+            <button id="btnlike" class="btnwithicon" onclick="like()">Like<i class="fa fa-thumbs-up"></i></button>
+            <p id="count" class="count">Be the first one to like this!</p>
+        </div>
+        <div class="comment">
+            <b>All Comments:</b>
+            <textarea placeholder="Leave a comment" class="txtcomment" id="txtcomment"></textarea>
+            <button id="btncomment" class="btnwithicon" onclick="comment()">Comment</button>
+            <div id="commentcard">
+
+            </div>
+        </div>
+
     </div>
-    <script src="../scripts/post.js"></script>
+    <script src="../scripts/post.js "></script>
 </body>
 
 </html>
