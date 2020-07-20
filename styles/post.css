@@ -95,3 +95,17 @@ body {
 #btnsave {
     display: none;
 }
+
+.content {
+    margin-top: 30px;
+}
+
+.txtareacontent {
+    font-family: inherit;
+    display: none;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #fed3da;
+    margin-bottom: 20px;
+    height: 200px;
+}
