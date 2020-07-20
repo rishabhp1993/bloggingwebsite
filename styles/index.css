@@ -101,6 +101,15 @@ body {
     width: 30%
 }
 
+.modallarge {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 60%
+}
+
 .modalheader {
     border-bottom: 1px solid #ddd;
     position: relative;
@@ -131,7 +140,22 @@ body {
     color: gray;
 }
 
+.modalbody textarea {
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 5px;
+    border: 0;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 98%;
+}
+
 .modalbody input::placeholder {
+    color: #ccc;
+}
+
+.modalbody textarea::placeholder {
     color: #ccc;
 }
 

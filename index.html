@@ -21,7 +21,7 @@
     <div class="main">
         <div class="postbuttons">
             <button type="button">All Posts</button>
-            <button>Create Post</button>
+            <button id="btncreatepost">Create Post</button>
         </div>
     </div>
     <div id="modalsignup" class="modalbg">
@@ -65,20 +65,45 @@
             </div>
         </div>
     </div>
+    <div id="modalcreatepost" class="modalbg">
+        <div class="modallarge">
+            <div class="modalheader">
+                <span>Pen Your Post</span>
+                <i id="btnclose3" class="fa fa-close"></i>
+            </div>
+            <div class="modalbody">
+                <form>
+                    <p>Title</p>
+                    <input type="text" placeholder="Enter title of your post" required></input>
+                    <p>Content</p>
+                    <textarea rows="20" cols="100" placeholder="Enter the contents of your post"></textarea>
+                    <div style="text-align:center;">
+                        <button type="submit" style="width: 120px;">Create</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
     <script>
         // Get the modal
         var modal1 = document.getElementById("modalsignup");
 
         var modal2 = document.getElementById("modalsignin");
 
+        var modal3 = document.getElementById("modalcreatepost");
+
         // Get the button that opens the modal
         var btnsignup = document.getElementById("btnopensignupmodal");
 
         var btnsignin = document.getElementById("btnopensigninmodal");
 
+        var btncreatepost = document.getElementById("btncreatepost");
+
         // Get the <span> element that closes the modal
         var span1 = document.getElementById("btnclose1");
         var span2 = document.getElementById("btnclose2");
+        var span3 = document.getElementById("btnclose3");
 
         // When the user clicks the button, open the modal 
         btnsignup.onclick = function() {
@@ -86,6 +111,9 @@
         }
         btnsignin.onclick = function() {
             modal2.style.display = "block";
+        }
+        btncreatepost.onclick = function() {
+            modal3.style.display = "block";
         }
 
         // When the user clicks on <span> (x), close the modal
@@ -95,9 +123,12 @@
         span2.onclick = function() {
             modal2.style.display = "none";
         }
+        span3.onclick = function() {
+            modal3.style.display = "none";
+        }
         lnksignup.onclick = function() {
             document.getElementById('modalsignup').style.display = 'block';
-            document.getElementById('modalsignin').style.display = 'none'
+            document.getElementById('modalsignin').style.display = 'none';
         }
     </script>
 </body>
