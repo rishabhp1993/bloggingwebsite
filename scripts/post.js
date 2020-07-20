@@ -11,5 +11,9 @@ function makeeditable() {
 }
 
 function save() {
-
+    innertext = document.getElementById("titletext").innerText = innertext;
+    document.getElementById("titletext").style.display = "block";
+    document.getElementById("titletextbox").style.display = "none";
+    document.getElementById("btnedit").style.display = "block";
+    document.getElementById("btnsave").style.display = "none";
 }

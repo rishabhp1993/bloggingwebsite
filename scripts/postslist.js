@@ -27,6 +27,7 @@ function removecard() {
     } else if (id == "fifth") {
         document.getElementById("card5").style.display = "none";
     }
+    return false;
 }
 
 function closemodal() {
