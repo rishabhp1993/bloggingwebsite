@@ -2,6 +2,7 @@ var innertext;
 var innertextcontent;
 var count = 0;
 
+//on edit click
 function makeeditable() {
     innertext = document.getElementById("titletext").innerText;
     innertextcontent = document.getElementById("txtcontent").innerText;
@@ -16,6 +17,7 @@ function makeeditable() {
 
 }
 
+//on save click
 function save() {
     innertext = document.getElementById("titletextbox").children[0].value;
     innertextcontent = document.getElementById("txtareacontent").value;
@@ -29,6 +31,7 @@ function save() {
     document.getElementById("btnsave").style.display = "none";
 }
 
+//on like click
 function like() {
     console.log(count)
     count = count + 1;
@@ -40,6 +43,7 @@ function like() {
     }
 }
 
+//on comment click
 function comment() {
     var comment = document.getElementById("txtcomment").value;
     var tag = document.createElement("p");

@@ -38,6 +38,8 @@ span2.onclick = function() {
 span3.onclick = function() {
     modal3.style.display = "none";
 }
+
+//On signup click
 lnksignup.onclick = function() {
     document.getElementById('modalsignup').style.display = 'block';
     document.getElementById('modalsignin').style.display = 'none';

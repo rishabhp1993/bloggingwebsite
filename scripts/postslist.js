@@ -1,4 +1,6 @@
+//global variable
 var card;
+
 
 function openpopup(id) { // Get the modal
 
@@ -11,6 +13,7 @@ function openpopup(id) { // Get the modal
     console.log(card);
 }
 
+// On delete button click
 function removecard() {
     console.log("in remove card method" +
         card)
@@ -30,6 +33,7 @@ function removecard() {
     return false;
 }
 
+//Close modal
 function closemodal() {
     var modal = document.getElementById("modaldelete");
     modal.style.display = "none";

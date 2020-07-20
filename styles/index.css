@@ -11,6 +11,9 @@ body {
     font-weight: 300;
 }
 
+
+/*Header CSS*/
+
 .header {
     padding: 15px;
     background-color: transparent;
@@ -49,6 +52,9 @@ body {
     padding: 5px;
 }
 
+
+/*Center area CSS*/
+
 .main {
     display: flex;
     justify-content: center;
@@ -70,6 +76,9 @@ body {
     border: 0;
     padding: 10px;
 }
+
+
+/*Modal CSS*/
 
 .modalbg {
     display: none;

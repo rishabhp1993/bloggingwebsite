@@ -2,14 +2,17 @@
 <html>
 
 <head>
+    <!--Custom Stylesheet-->
     <link rel="stylesheet" type="text/css" href="../styles/post.css">
+    <!--CDN for Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <!--CDN for Font Awesome Fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <!-- TODO: Include code for header here -->
+    <!-- header here -->
     <div class="header" id="myHeader">
         <div class="logo">
             <span>ScriBBler</span>
@@ -20,18 +23,26 @@
             <button type="button" id="btnopensignupmodal">Sign Up</button>
         </div>
     </div>
+
+    <!--Main body-->
     <div class="main">
+
+        <!--Title-->
         <div class="title" id="titletext">
             Everything you should know about "Module" and "Require" in Node.js
         </div>
         <div class="titletextbox" id="titletextbox">
             <input type="text" />
         </div>
+
+        <!--Author Name and Toolbar-->
         <div class="toolbar">
             <span class="author">Srishti Gupta</span>
             <button id="btnedit" class="btnwithicon" onclick="makeeditable()" style="float: right;">Edit<i class="fa fa-edit"></i></button>
             <button id="btnsave" class="btnwithicon" onclick="save()" style="float: right;">Save<i class="fa fa-save"></i></button>
         </div>
+
+        <!--Content-->
         <div class="content">
             <p id=txtcontent class="textcontent">
                 If you don’t know precisely what Node.js is and you’re here to learn about new things in Node.js. Let’s start with a brief introduction to the same. Node.js was originated in 2009 by Ryan Dahl. This runtime system enhanced extensively popular with coders
@@ -44,21 +55,27 @@
             </p>
             <textarea class="txtareacontent" id="txtareacontent"></textarea>
         </div>
+
+        <!--Likes-->
         <div class="like">
             <button id="btnlike" class="btnwithicon" onclick="like()">Like<i class="fa fa-thumbs-up"></i></button>
             <p id="count" class="count">Be the first one to like this!</p>
         </div>
+
+        <!--Comment Section-->
         <div class="comment">
             <b>All Comments:</b>
             <textarea placeholder="Leave a comment" class="txtcomment" id="txtcomment"></textarea>
             <button id="btncomment" class="btnwithicon" onclick="comment()">Comment</button>
             <div id="commentcard">
-
             </div>
         </div>
 
     </div>
+
+    <!--Custom Scripts-->
     <script src="../scripts/post.js "></script>
+
 </body>
 
 </html>
