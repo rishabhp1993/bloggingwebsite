@@ -1,0 +1,97 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.header {
+    padding: 15px;
+    background-color: transparent;
+    margin: 0;
+    overflow: auto;
+}
+
+.logo {
+    width: 70%;
+    float: left;
+}
+
+.logo span {
+    font-family: 'Montez', cursive;
+    font-size: 35px;
+    color: #1601ff;
+}
+
+.logo p {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    margin: 0;
+}
+
+.loginregbtns {
+    width: 30%;
+    float: left;
+}
+
+.loginregbtns button {
+    float: right;
+    margin-right: 20px;
+    width: 80px;
+    color: white;
+    background-color: #1601ff;
+    padding: 5px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.btnwithicon {
+    width: 80px;
+    padding: 10px;
+    background-color: #ed2753;
+    color: #fff;
+    border: 0;
+}
+
+.btnwithicon i {
+    margin-left: 10px;
+}
+
+.titletextbox {
+    display: none;
+    text-align: center;
+}
+
+.titletextbox input {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #fed3da;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#btnsave {
+    display: none;
+}
